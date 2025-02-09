@@ -135,6 +135,12 @@ function loadSavedChats() {
 
         savedChatsList.appendChild(chatItem);
     });
+
+    // remove initial menu (...)
+    const removeInitialCloseMenu = document.querySelectorAll('li[data-testid^="history-item-"] div a + div');
+    removeInitialCloseMenu.forEach(div => {
+        div.remove();
+    })
 }
 
 function removeChatFromLocalStorage(href) {

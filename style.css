@@ -41,6 +41,9 @@
 li[data-testid^="history-item-"]:hover .save-icon-wrapper {
   display: block;
 }
+li[data-testid^="history-item-"] > div a {
+  mask-image: linear-gradient(90deg,#000,#000 70%,transparent 89%,transparent) !important;
+}
 
 /* alert dialog box */
 .alert-overlay {
