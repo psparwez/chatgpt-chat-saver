@@ -35,6 +35,11 @@
   right: 15%;
   top: 50%;
   transform: translateY(-50%);
+
+  & > svg{
+    height:17px !important;
+    width:17px !important;
+  }
 }
 
 /* Show the save icon when hovering over the chat item */
